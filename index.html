@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Resume Builder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Professional Resume Builder</h1>
+    </header>
+    
+    <main>
+      <section class="form-section">
+        <h2>Enter Your Details</h2>
+        <form id="resume-form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" placeholder="+1234567890" required>
+          </div>
+          <div class="form-group">
+            <label for="experience">Experience:</label>
+            <textarea id="experience" name="experience" rows="4" placeholder="Describe your work experience..." required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="education">Education:</label>
+            <textarea id="education" name="education" rows="4" placeholder="Describe your education background..." required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="skills">Skills:</label>
+            <textarea id="skills" name="skills" rows="4" placeholder="List your skills..." required></textarea>
+          </div>
+          <button type="button" onclick="generateResume()">Generate Resume</button>
+        </form>
+      </section>
+      
+      <section class="preview-section">
+        <h2>Resume Preview</h2>
+        <div id="resume-preview" class="resume-preview">
+          <!-- Resume content will be dynamically inserted here -->
+        </div>
+      </section>
+    </main>
+    
+    <footer>
+      <p>© 2024 Professional Resume Builder. All rights reserved.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
